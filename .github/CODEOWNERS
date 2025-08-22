@@ -1,0 +1,40 @@
+# CODEOWNERS file for notification-monitor-99
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-cache @Armor-test/unit-test @Armor-test/grp-reporting
+
+# Directory ownership
+/middleware/ @Armor-test/dept-release @Armor-test/dept-reliability @Armor-test/squad-search
+/extensions/ @Armor-test/dept-test @Armor-test/team-security @Armor-test/squad-tooling
+/shared/ @Armor-test/team-notifications @Armor-test/grp-integration @Armor-test/team-frontend
+/utils/ @Armor-test/dept-security @Armor-test/squad-performance @Armor-test/dept-api
+/dist/ @Armor-test/squad-tooling @Armor-test/squad-research
+/controllers/ @Armor-test/dept-billing @Armor-test/grp-storage
+/tests/ @Armor-test/unit-governance @Armor-test/unit-design @Armor-test/squad-qa
+/db/ @Armor-test/dept-reliability @Armor-test/team-frontend @Armor-test/squad-performance
+/components/ @Armor-test/team-notifications @Armor-test/grp-search @Armor-test/squad-api
+/deploy/ @Armor-test/team-logging @Armor-test/team-frontend
+/build/ @Armor-test/grp-reporting @Armor-test/dept-ui
+/third_party/ @Armor-test/squad-ml @Armor-test/dept-test @Armor-test/grp-payments
+/internal/ @Armor-test/unit-governance @Armor-test/team-research @Armor-test/grp-storage
+/auth/ @Armor-test/squad-performance @Armor-test/squad-research @Armor-test/squad-reporting
+/pkg/ @Armor-test/dept-identity @Armor-test/squad-api
+
+# File type ownership
+*.go @Armor-test/grp-ui @Armor-test/dept-logging @Armor-test/unit-cloud
+*.ini @Armor-test/team-governance @Armor-test/dept-identity @Armor-test/squad-mobile
+*.lock @Armor-test/squad-mobile @Armor-test/dept-identity
+*.cpp @Armor-test/squad-tooling @Armor-test/grp-reporting
+*.config @Armor-test/unit-test @Armor-test/dept-identity @Armor-test/unit-cloud
+*.css @Armor-test/team-research @Armor-test/squad-performance
+*.yaml @Armor-test/squad-search @Armor-test/grp-payments @Armor-test/squad-ux
+*.sql @Armor-test/dept-test @Armor-test/grp-payments @Armor-test/squad-mobile
+*.ts @Armor-test/squad-search @Armor-test/team-frontend @Armor-test/team-notifications
+*.php @Armor-test/squad-api @Armor-test/grp-storage @Armor-test/dept-release
+*.proto @Armor-test/grp-storage @Armor-test/dept-data @Armor-test/squad-api
+*.h @Armor-test/squad-api @Armor-test/dept-notifications
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+package.json @Armor-test/dependency-team @Armor-test/security
+/src/**/security/ @Armor-test/security @Armor-test/compliance
+Dockerfile @Armor-test/devops @Armor-test/infra
